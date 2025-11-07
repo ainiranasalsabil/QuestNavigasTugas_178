@@ -13,11 +13,16 @@ fun MenuUtama(onMulaiClick: () -> Unit) {
         Column(
             modifier = Modifier
                 .padding(innerPadding)
-                .fillMaxSize(),
+                .fillMaxSize()
+                .padding(32.dp),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(text = "Selamat datang di aplikasi")
+            Text(text = "CARD-LST MOBILE APP 2025")
+            Spacer(modifier = Modifier.height(24.dp))
+            Button(onClick = onMulaiClick) {
+                Text(text = "Formulir Pendaftaran")
+            }
         }
     }
 }
