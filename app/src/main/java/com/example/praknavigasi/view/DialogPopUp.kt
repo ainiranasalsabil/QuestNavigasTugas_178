@@ -1,7 +1,7 @@
 package com.example.praknavigasi.view
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -17,5 +17,11 @@ fun DialogPopUp(onBackClick: () -> Unit) {
         verticalArrangement = Arrangement.Center
     ) {
         Text(text = "Data berhasil dikirim!")
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        Button(onClick = onBackClick) {
+            Text(text = "Kembali ke Menu")
+        }
     }
 }
