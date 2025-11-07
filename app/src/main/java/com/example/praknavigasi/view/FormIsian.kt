@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.praknavigasi.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -34,7 +33,7 @@ fun FormIsian(navController: NavController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(R.string.form_title.toString(), color = Color.White) },
+                title = { Text("Formulir Pendaftaran", color = Color.White) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(containerColor = Color(0xFF64B5F6))
             )
         },
@@ -50,6 +49,17 @@ fun FormIsian(navController: NavController) {
                     verticalArrangement = Arrangement.spacedBy(16.dp),
                     modifier = Modifier.fillMaxWidth()
                 ) {
+                    // Judul formulir di atas Card
+                    Text(
+                        text = "Formulir Pendaftaran",
+                        color = Color(0xFF1565C0),
+                        fontSize = 24.sp,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(bottom = 8.dp),
+                        style = MaterialTheme.typography.titleLarge
+                    )
+
                     // Card untuk Nama
                     Card(
                         modifier = Modifier.fillMaxWidth(),
