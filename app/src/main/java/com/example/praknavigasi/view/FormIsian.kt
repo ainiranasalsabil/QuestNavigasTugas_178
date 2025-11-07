@@ -48,17 +48,7 @@ fun FormIsian(navController: NavController) {
                 Column(
                     verticalArrangement = Arrangement.spacedBy(16.dp),
                     modifier = Modifier.fillMaxWidth()
-                ) {
-                    // Judul formulir di atas Card
-                    Text(
-                        text = "Formulir Pendaftaran",
-                        color = Color(0xFF1565C0),
-                        fontSize = 24.sp,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(bottom = 8.dp),
-                        style = MaterialTheme.typography.titleLarge
-                    )
+                )  {
 
                     // Card untuk Nama
                     Card(
