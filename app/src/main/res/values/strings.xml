@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">PrakNavigasi</string>
+    <string name="app_name">NavigasiApp</string>
+    <string name="welcome_text">CARD-LST MOBILE APP 2025</string>
+    <string name="menu_title">Menu Utama</string>
+    <string name="form_button">Formulir Pendaftaran</string>
+    <string name="submit">Submit</string>
+    <string name="back">Kembali</string>
+    <string name="ok">OK</string>
+    <string name="form_title">Formulir Pendaftaran</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="status">Status</string>
+    <string name="alamat">Alamat</string>
+    <string name="popup_title">Data yang Anda Isi</string>
+    <string name="popup_message">Berikut data yang telah Anda masukkan:</string>
+    <string name="splash_title">CARD-LST MOBILE APP 2025</string>
 </resources>
