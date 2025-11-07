@@ -1,13 +1,11 @@
 package com.example.praknavigasi.navigation
 
-
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.navigasi.view.SplashScreen
-import com.example.navigasi.view.MenuUtama
+import com.example.navigasi.view.*
 
 enum class Screen {
     Splash,
@@ -25,6 +23,11 @@ fun Navigasi(navController: NavHostController = rememberNavController()) {
         composable(Screen.Splash.name) {
             SplashScreen {
                 navController.navigate(Screen.Menu.name)
+            }
+        }
+        composable(Screen.Menu.name) {
+            MenuUtama {
+                navController.navigate(Screen.Form.name)
             }
         }
     }
