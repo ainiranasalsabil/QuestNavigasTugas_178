@@ -14,3 +14,10 @@ fun SplashScreen(onTimeout: () -> Unit) {
             .background(Color(context.getColor(R.color.colorAccent))),
         contentAlignment = Alignment.Center
     )
+    Text(
+        text = stringResource(R.string.splash_title),
+        fontSize = 22.sp,
+        color = Color.White
+    )
+}
+}
