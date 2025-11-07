@@ -1,9 +1,13 @@
 package com.example.praknavigasi.navigation
 
+
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.navigasi.view.SplashScreen
+import com.example.navigasi.view.MenuUtama
 
 enum class Screen {
     Splash,
@@ -18,8 +22,11 @@ fun Navigasi(navController: NavHostController = rememberNavController()) {
         navController = navController,
         startDestination = Screen.Splash.name
     ) {
-        // Rute akan ditambahkan nanti
+        composable(Screen.Splash.name) {
+            SplashScreen {
+                navController.navigate(Screen.Menu.name)
+            }
+        }
     }
 }
-
 
