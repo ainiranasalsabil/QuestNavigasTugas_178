@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.praknavigasi.navigation.Navigasi
 import com.example.praknavigasi.ui.theme.PrakNavigasiTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,10 +21,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             PrakNavigasiTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    androidx.compose.foundation.layout.Box(modifier = Modifier.padding(innerPadding)) {
+                        Navigasi()
+                    }
                 }
             }
         }
