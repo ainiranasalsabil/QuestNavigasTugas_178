@@ -1,12 +1,23 @@
 package com.example.praknavigasi.view
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormIsian(onSubmitClick: () -> Unit) {
-    Column(
-        modifier = Modifier.fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
-        Text(text = "Form Isian")
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("Form Isian") }
+            )
+        }
+    ) { innerPadding ->
+        Column(
+            modifier = Modifier
+                .padding(innerPadding)
+                .fillMaxSize()
+                .padding(24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text("Isi data anda di bawah ini.")
+        }
     }
 }
