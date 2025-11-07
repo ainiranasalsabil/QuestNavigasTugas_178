@@ -8,3 +8,9 @@ fun SplashScreen(onTimeout: () -> Unit) {
         delay(2000)
         onTimeout()
     }
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(context.getColor(R.color.colorAccent))),
+        contentAlignment = Alignment.Center
+    )
